@@ -1,0 +1,339 @@
+@import url('reset.css');
+@import url('fonts/bahij-sultannahia.ttf');
+@import url('fonts/ChronicaPro-Regular.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body{
+    background-color:  #EAEBED;
+}
+.container{
+    font-family: 'Open Sans';
+    margin: 20px auto;
+    width: 1240px;
+    height: 550px;
+    background-color: white;
+    padding-top: 20px;
+}
+.menu{
+    width:506px;
+    height:50px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: black;
+}
+.link-active{
+    color: blue;
+}
+.small-container,.table, .small-container2{
+    background-color:  #EAEBED;
+    width: 1204px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px 13px;
+}
+.small-container2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu>a{
+    margin: 40px;
+    text-decoration: none;
+}
+.data{
+    width: 85px;
+    height: 90px;
+}
+.team{
+    width: 98px;
+    height: 70px;
+    float: left;
+}
+.left-block{
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 120px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+    float: left;
+}
+.img-b{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 35px;
+    border-radius: 6px;
+    padding: 4px;
+    margin: 9px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.img-b:hover{
+    background-color:blue;
+    color: white;
+    z-index: 10;
+}
+.img-b::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 0px;
+    height: 30px;
+    background-color:blue;
+    transition-property: width;
+    transition: 0.7s;
+    border-radius: 6px;
+    z-index: -1;
+}
+.img-b:hover::after{
+    width: 60px;
+}
+.st:hover::after{
+    width: 0px;
+}
+.icon+span{
+    color: white;
+    position: absolute;
+    top: 9px;
+    left: 30px;
+    font-size: 12px;
+}
+a>img{
+    color:black;
+    height: 30px;
+    width: 35px;
+    padding: 4px;
+    margin-left: -7px;
+}
+.block-top1{
+    width: 450px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 20px;
+}
+.block-top2{
+    width: 520px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 40px;
+    padding: 20px;
+}
+.block-center, .block-bottom{
+    width: 570px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.block-bottom-right{
+    width: 400px;
+    height: 280px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: -140px;
+    padding: 20px;
+}
+p{
+    font-size: 18px;
+    color: #B1B1B1;
+    margin-bottom: 5px;
+    line-height: 22px;
+    word-spacing: 1px;
+}
+h3{
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+.men{
+    border-radius: 50%;
+    height: 70px;
+}
+.people{
+    padding: 15px;
+    margin:5px 35px;
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    position: relative;
+}
+.people:hover{
+    background-color: blue;
+}
+.people:hover::after{
+    content: url(images/trash.png);
+    /* width: 40px;
+    height: 40px; */
+    background-color: rgb(250, 245, 245);
+    position: absolute;
+    top: -10px;
+    right: -25px;
+    border-radius: 5px;
+}
+h4{
+    margin-top: 25px;
+    color:  #B1B1B1;;
+}
+table{
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+}
+td{
+    padding: 20px 30px;
+}
+td>input{
+    width: 30px;
+    height: 30px;
+}
+
+tr:hover{
+    background-color: white;
+
+}
+.small{
+    width:  30px;
+    height: 30px;
+    background-color: lightgrey;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid wheat;
+   
+}
+.small:hover{
+    background-color:lightblue;
+}
+.togezer{
+    display: flex;
+    flex-direction: row;
+}
+.kolo{
+    display: flex;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    float: left;
+    margin-right: 20px;
+}
+.kolo>span{
+    font-size: 50px;
+}
+.k1{
+    background-color: tomato;
+}
+.k2{
+    background-color: rgb(105, 69, 173);
+}
+.k3{
+    background-color: #ce811c;
+}
+.first-block{
+    width: 525px;
+    height: 90px;
+    padding: 10px;
+    margin: 0px 20px 30px 0px;
+    background-color: rgb(240, 238, 238);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.togezer h4{
+    margin-top: 10px;
+   letter-spacing: 1px;
+   font-size: 26px;
+   color: black;
+   font-weight: bold;
+}
+h6{
+    padding-top: 3px;
+    color: rgb(73, 73, 73);
+}
+.second-block{
+    width: 525px;
+    height:350px;
+    padding: 10px;
+    margin: 10px 20px 30px 0px;
+    background-color: rgb(240, 238, 238);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+h5{
+    font-weight: bold;
+    margin: 7px;
+}
+input{
+    width: 490px;
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: 3px 5px 20px 3px grey;
+    margin-left: 8px;
+    box-sizing: border-box;
+    border: grey solid 2px;
+    padding-left: 10px;
+}
+
+input[type="button"]{
+    width: 78px;
+    background-color: rgb(5, 49, 11);
+    font-size: 20px;
+    color: ivory;
+    margin-top: 7px;
+    box-sizing: border-box;
+    margin-left: 415px;
+}
+.lft{
+    background-color: rgb(240, 238, 238);
+}
+input:focus{
+    border: blue solid 2px;
+    border-radius: 8px;
+    outline: none;
+}
+.lb{
+    margin-left: 10px;
+}
+.rb{
+    width: 525px;
+    height:470px;
+    padding: 10px;
+    margin: 0px 20px 30px 0px;
+    background-color: rgb(240, 238, 238);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.form input{
+    width: 240px;
+}
+.dod{
+    float: left;
+}
+.dod2>h5:first-child{
+    padding-top: 7px;
+}
+#in-ad{
+    height:80px;
+}
+
+.rb h5:first-child{
+    margin-top: 8px;
+}
